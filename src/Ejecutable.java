@@ -11,7 +11,7 @@ public class Ejecutable{
         int longitud;
 
         for(int i=0;i<numeroDePass;i++){
-            System.out.println("¿Que longitud necesita? ");
+            System.out.println("¿Que longitud? ");
             cond=tec.next();
             if(cond.toLowerCase().equals("si")){
                 System.out.println("Indica la longitud para saber la contraseña");
