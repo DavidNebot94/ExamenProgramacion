@@ -4,17 +4,17 @@ public class Ejecutable{
     public static void main(String[]args){
         int numeroDePass;
         Scanner tec=new Scanner(System.in);
-        System.out.println("Ingrese el numero de contraseñas a construir");
+        System.out.println("Ingrese el numero de contraseñas");
         numeroDePass=tec.nextInt();
         Password pass[]=new Password[numeroDePass];
         String cond,fuerte;
         int longitud;
 
         for(int i=0;i<numeroDePass;i++){
-            System.out.println("Desea ingresar la longitud de la contraseña? ");
+            System.out.println("¿Que longitud necesita? ");
             cond=tec.next();
             if(cond.toLowerCase().equals("si")){
-                System.out.println("Ingrese su longitud y se creara automaticamente su contraseña ");
+                System.out.println("Indica la longitud para saber la contraseña");
                 longitud=tec.nextInt();
                 pass=new Password(longitud);
 
